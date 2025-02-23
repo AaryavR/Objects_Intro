@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Trig</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+        <!-- jQuery and Popper.js (Required for Bootstrap JavaScript) -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
+                                
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        
+    </head>
+    <body>
+
+        <input type="number" id="num">
+        <button onClick=m()>Click</button>
+        <h1 id="resultS">Result Sin</h1>
+        <h1 id="resultC">Result Cos</h1>
+        <h1 id="resultT">Result Tan</h1>
+
+        <script>
+            function m(){
+                var cos = Math.cos(document.getElementById("num").value);
+                document.getElementById("resultC").innerHTML = cos
+                console.log(cos)
+
+                var sin = Math.sin(document.getElementById("num").value);
+                document.getElementById("resultS").innerHTML= sin
+
+                var tan = Math.tan(document.getElementById("num").value);
+                document.getElementById("resultT").innerHTML= tan
+            }
+
+        </script>
+
+
+    </body>
+
+</html>
